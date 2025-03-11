@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!----------------------------------- FavIcon ----------------------------------->
+    <link rel="icon" href="IMG/favicon.png">
+    <!----------------------------------- Link del css ----------------------------------->
+    <link rel="stylesheet" href="CSS/estiloGaleria.css">
+    <!----------------------------------- Link de Boostrap5 ----------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Button at the bottom-right part -->
+    <button id="botonFijo">
+        <a href="#Home"><img src="IMG/flecha.jpg" alt=""></a>
+    </button>
+
+    <header id="Home">
+        <!-- Nav start -->
+       <nav class="navbar navbar-expand-lg fixed-top" id="nav">  <!-- Positioned at the top, no background -->
+           <div class="container-fluid" id="capaNav">
+
+               <div class="row col-lg-6 col-sm-1">
+                   <p class="col-2"></p>
+                   <a id="titulo" class="col-4"><img src="IMG/logo-light.png"></a>
+               </div>
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="menu">
+                   <ul class="navbar-nav ms-auto justify-content-end"> <!-- Aligns items to the right -->
+                       
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="galeria.html    ">Gallery</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="sobreNosotros.html">About Us</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="contactos.html">Contacts</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                       </li>
+                       
+                   </ul>
+               </div>
+
+       </nav>
+       <!-- Nav end -->
+
+        <!-- Blog text -->
+       <div id="tituloPagina" class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-column">
+                <h1>GALLERY</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Header end -->
+
+    <section id="seccionGaleria">
+
+        <div class="container">
+              
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <div class="row">
+                        <p id="resultados" style="font-size: 1.1em;"> <span id="All">ALL</span> / CS2 / DOTA2 / FORTNITE / PUBG / STREAMS</p>
+
+                            <!-- div in wich will be a photo and when someone hover the photo, it will appear a text -->
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal1"><img src="IMG/fortnite.jpg" class="card-logo"></a>
+                                    <div class="card-overlay-text" id="textoHover">Team League - Fortnite Game</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal2"><img src="IMG/img1.webp"></a>
+                                    <div class="card-overlay-text" id="textoHover">The Best Streams - Every Day</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal3"><img src="IMG/pubg.jpg"></a>
+                                    <div class="card-overlay-text" id="textoHover">PUBG Battle Royale - Pubg Game</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal4"><img src="IMG/img3.webp"></a>
+                                    <div class="card-overlay-text" id="textoHover">WORLD OF TANKS - Farming</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal5"><img src="IMG/clashRo.webp"></a>
+                                    <div class="card-overlay-text" id="textoHover">TTHE BEST STREAMS - Every Day</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal6"><img src="IMG/cs2.jpg"></a>
+                                    <div class="card-overlay-text" id="textoHover">COUNTER STRIKE 2 - New Era</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal7"><img src="IMG/dota2.avif"></a>
+                                    <div class="card-overlay-text" id="textoHover">DOTA 2 - Classified Esport</div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12" id="imagenes">
+                                <div class="card-image">
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#fullscreenModal8"><img src="IMG/rl.jpg"></a>
+                                    <div class="card-overlay-text" id="textoHover">ROCKET LEAGUE - Football With Cars</div>
+                                </div>
+                            </div>
+
+
+                            <p id="loadMore">Load <a href="#">more</a></p>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------------------------- Modals -------------------------------------------------->
+
+
+    <!-- Fullscreen Modal -->
+    <div class="modal fade" id="fullscreenModal1" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/fortnite.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal2" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/img1.webp">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal3" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/pubg.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal4" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/img3.webp">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal5" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/clashRo.webp">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal6" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/cs2.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal7" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/dota2.avif">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="fullscreenModal8" tabindex="-1" aria-labelledby="fullscreenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Modal image -->
+                    <img src="IMG/rl.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </section>
+
+
+    <!----------------------------------- Footer ----------------------------------->
+
+
+    <footer id="footer">
+        <div class="container-fluid" id="bordeFooter">
+            <div class="row" id="textoFooter">
+    
+                <!------------ Plaxer------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="IMG/logo-light.png"> <br/>
+                    <input type="text" name="gmail" placeholder="enter you email" id="email" pattern=".+@example\.com">
+                    <p id="subscribe"><a href="#subscribe"> <img src="IMG/flecha.png" alt="">Servicios</a></p>
+                    <p>The world without photography will be meaningless to us.</p>
+                </div>
+    
+                <!------------ Address ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Addres</p>
+                    <p>Baker Street 223b London, CA 70413 <br/> Open: 9:30 A.M - 5:30 P.M</p>
+                    <p>Phone: +1(800)456 37 11</p>
+                    <p>Email: support@promo-theme.com</p>
+                    <p id="socialMedia">
+                        <a href=""><img src="IMG/twitch.png" alt=""></a>
+                        <a href=""><img src="IMG/twitter.png" alt=""></a>
+                        <a href=""><img src="IMG/facebook.png" alt=""></a>
+                    </p>
+                </div>
+    
+                <!------------ Recent Posts ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Posts</p>
+                    <p>Kills You Slowly <br/> November 8,2024</p>
+                    <p>Clout <br/> April 22, 2024</p>
+                    <p>Jerome <br/> April 22, 2024</p>
+                    <p><a href="">Linkedin</a></p>
+                </div>
+    
+                    <!------------ Recent Comments ------------>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Comments</p>
+                    <p>Elena Cobsky - Diving Engagement Online</p>
+                    <p>John Michel - Desinging for the Web in 2019</p>
+                    <p>Anton Stockman - Streamlining the path to Conversion</p>
+                </div>
+            </div>
+    
+            <p id="copyright"><img src="IMG/cpr.png" alt="">2024 GameFusion StudiosTeam | Privacy Policy | Sitemap</p>
+    
+    </footer>
+
+    <script src="JS/gallery.js"></script>
+    
+    
+           
+    </body>
+    </html>

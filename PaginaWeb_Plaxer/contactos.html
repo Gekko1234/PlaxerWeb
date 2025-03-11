@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!----------------------------------- FavIcon ----------------------------------->
+    <link rel="icon" href="IMG/favicon.png">
+    <!----------------------------------- Link del css ----------------------------------->
+    <link rel="stylesheet" href="CSS/estiloContactos.css">
+    <!----------------------------------- Link de Boostrap5 ----------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Button at the bottom-right part -->
+    <button id="botonFijo">
+        <a href="#Home"><img src="IMG/flecha.jpg" alt=""></a>
+    </button>
+
+        <!----------------------------------- Header Start ----------------------------------->
+
+    <header id="Home">
+
+     <!-- Nav start -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">  <!-- Positioned at the top, no background -->
+            <div class="container-fluid" id="capaNav">
+
+                <div class="row col-lg-6 col-sm-1">
+                    <p class="col-2"></p>
+                    <a id="titulo" class="col-4"><img src="IMG/logo-light.png"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto justify-content-end"> <!-- Aligns items to the right -->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Gallery</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobreNosotros.html">About Us</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contactos.html">Contacts</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="seccionContactos">
+
+        <div class="container-fluid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.129277936464!2d-3.56316392502369!3d36.982847257383845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71edde2265660d%3A0x5a6f1cb5e1ca8735!2sIES%20Alonso%20Cano!5e0!3m2!1ses!2ses!4v1731355121677!5m2!1ses!2ses"
+            width="100%" height="450" style="border:0; margin-top: 100px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="container-fluid" id="formulario" style= margin-bottom:200px;>
+            <div class="row">
+            
+
+                <div class="col-lg-8 col-sm-12 col-md-12" style="margin-top: 50px;">
+                    <h1>Don't be shy to Contact us.</h1>
+                    <div class="col">
+                    <div class="row" style="margin: auto;">
+
+                        
+                            <div class="col-lg-6 col-md-12 col-sm-12"> 
+                                <input type="text" placeholder="Your name" id="nombre" style="width: 250px; margin-top: 40px;">
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <input type="text" placeholder="Your email" id="email" style="width: 250px; margin-top: 40px;">
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <textarea name="textarea" rows="10" style="color: grey; margin-top: 40px; width: 73%;" placeholder="Write something here"></textarea>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-12" style="text-align: start;" id="textos">
+                    <p id="tituloForm" style="margin-top: 250px; margin-left: 50px;">
+                        <b>Location</b> <br/>
+                        <span id="texto">C/ Blas Infante, 28, 18650 Dúrcal, Granada</span> 
+                    </p>
+
+                    <p id="tituloForm" style="margin-left: 50px;">
+                        <b>Phone</b> <br/>
+                        <span id="texto">+34 689 34 72 98</span> 
+                    </p>
+
+                    <p id="tituloForm" style="margin-left: 50px;">
+                        <b>E-mail</b> <br/>
+                        <span id="texto">support@promo-theme.com</span> 
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+        <!----------------------------------- Footer ----------------------------------->
+
+
+        <footer id="footer">
+            <div class="container-fluid" id="bordeFooter">
+                <div class="row" id="textoFooter">
+        
+                    <!------------ Plaxer------------>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <img src="IMG/logo-light.png"> <br/>
+                        <input type="text" name="gmail" placeholder="enter you email" id="email" pattern=".+@example\.com">
+                        <p id="subscribe"><a href="#subscribe"> <img src="IMG/flecha.png" alt="">Servicios</a></p>
+                        <p>The world without photography will be meaningless to us.</p>
+                    </div>
+        
+                    <!------------ Address ------------>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <p id="tituloFooter">Addres</p>
+                        <p>Baker Street 223b London, CA 70413 <br/> Open: 9:30 A.M - 5:30 P.M</p>
+                        <p>Phone: +1(800)456 37 11</p>
+                        <p>Email: support@promo-theme.com</p>
+                        <p id="socialMedia">
+                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                        </p>
+                    </div>
+        
+                    <!------------ Recent Posts ------------>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <p id="tituloFooter">Recent Posts</p>
+                        <p>Kills You Slowly <br/> November 8,2024</p>
+                        <p>Clout <br/> April 22, 2024</p>
+                        <p>Jerome <br/> April 22, 2024</p>
+                        <p><a href="">Linkedin</a></p>
+                    </div>
+        
+                        <!------------ Recent Comments ------------>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                        <p id="tituloFooter">Recent Comments</p>
+                        <p>Elena Cobsky - Diving Engagement Online</p>
+                        <p>John Michel - Desinging for the Web in 2019</p>
+                        <p>Anton Stockman - Streamlining the path to Conversion</p>
+                    </div>
+                </div>
+        
+                <p id="copyright"><img src="IMG/cpr.png" alt="">2024 GameFusion StudiosTeam | Privacy Policy | Sitemap</p>
+        
+        </footer>
+
+</body>
+</html>

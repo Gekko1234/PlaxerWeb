@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!----------------------------------- FavIcon ----------------------------------->
+    <link rel="icon" href="IMG/favicon.png">
+    <!----------------------------------- Link del css ----------------------------------->
+    <link rel="stylesheet" href="CSS/estiloHome.css">
+    <!----------------------------------- Link de Boostrap5 ----------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Button at the bottom-right part -->
+    <button id="botonFijo">
+        <a href="#Home"><img src="IMG/flecha.jpg" alt=""></a>
+    </button>
+
+        <!----------------------------------- Header Start ----------------------------------->
+
+    <header id="Home">
+
+     <!-- Nav start -->
+
+        <nav class="navbar navbar-expand-lg fixed-top">  <!-- Positioned at the top, no background -->
+            <div class="container-fluid" id="capaNav">
+
+                <div class="row col-lg-6 col-sm-1">
+                    <p class="col-2"></p>
+                    <a id="titulo" class="col-4"><img src="IMG/logo-light.png"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto justify-content-end"> <!-- Aligns items to the right -->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Gallery</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobreNosotros.html">About Us</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contactos.html">Contacts</a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                        </li>
+                        
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+
+    
+
+    <!-- Nav end -->
+
+
+    <!-- Carosel start -->
+
+    <div id="carousel" class="carousel slide">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="IMG/img1.webp" class="d-block w-100" alt="1">
+                <div class="carousel-caption d-flex align-items-center justify-content-start flex-column custom-caption">
+                    <h1>Games with idea & <br />memorable design.</h1>
+                    <button type="button">Watch now</button>
+                </div>
+            </div>
+    
+            <div class="carousel-item">
+                <img src="IMG/img2.webp" class="d-block w-100" alt="2">
+                <div class="carousel-caption d-flex align-items-center justify-content-start flex-column custom-caption">
+                    <h1>The New Game & <br />awesome concept.</h1>
+                    <button type="button">Watch now</button>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img src="IMG/img3.webp" class="d-block w-100" alt="3">
+                <div class="carousel-caption d-flex align-items-center justify-content-start flex-column custom-caption">
+                    <h1>Best games <br />Best ideas.</h1>
+                    <button type="button">Watch now</button>
+                </div>
+            </div>
+
+
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+    
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+      <!-- Carosel end -->
+
+    </header>
+
+    <!----------------------------------- Header end ----------------------------------->
+
+
+    <!----------------------------------- Sections start ----------------------------------->
+
+    <!----------------------------------- Services section ----------------------------------->
+    <section id="Servicios">
+
+        <!-- Container with a row wich will have 3 cards with a logo and some text -->
+
+        <!------------ Title ------------>
+        <div class="container" id="contenidoServicios">
+
+            <div class="row" id="texto">
+                
+
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <!-- Card -->
+                    <div class="card" >
+                        <img src="IMG/twitch.png" class="imgen">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitch streaming</h4>
+                            <p class="card-text">New streams every day from our best players</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="IMG/mando.png" class="imgen">
+                        <div class="card-body">
+                            <h4 class="card-title">eSports News</h4>
+                            <p class="card-text">Got top streams and results from World Cyber Games</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 col-md-12">
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="IMG/trofeo.png" class="imgen">
+                        <div class="card-body">
+                            <h4 class="card-title">Twitch streaming</h4>
+                            <p class="card-text">New strams every day from our best players</p>
+                        </div>
+                    </div>
+                </div>
+                    
+               
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------------------- About us ----------------------------------->
+
+    <section id="sobreNosotros">
+
+        <!-- 
+            Section with a text that is 6 columns and aligned at the center and a video that is  the left 6 columns and aligned at the center
+        -->
+       
+        <div class="container-fluid" id="contenidoSobreNosotros">
+            <div class="row">
+                
+                    <!-- Text  -->
+
+                    <div class="col-lg-6 col-md-11 col-sm-11" id="textoSobre">
+                        <div class="card" >
+                            <div class="card-body">
+                            <h3 class="card-title">Game theme for each direction and more</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolore, doloremque accusamus natus nihil tempore vitae dolorum autem labore nobis aliquam consectetur praesentium temporibus. Quis ex facilis maiores et odio!</p>
+                            <p>Read <a href="#AboutUs">More</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video from youtube  -->
+
+                    <div class="col-lg-6 col-md-11 col-sm-11" >
+                        <iframe id="video" width="500" height="300" 
+                            src="https://www.youtube.com/embed/NrrsqcLg-84" 
+                            title="Video de YouTube" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+         
+            </div>
+        </div>
+
+    </section>
+
+
+    <!----------------------------------- Recent events section ----------------------------------->
+    <section id="recentEvents">
+
+        <!-- 
+            Container with some photos and text about the photos using grid. The photo will have overlayed text and will have text under it. 
+            The text will be different on colour for example for its view (decoration)
+        -->
+
+        <div class="container-fluid" id="contenidoEventos">
+            <div class="grid">
+
+                <!-- card 1 -->
+
+                <!-- Image -->
+                <div class="grid-card col-lg-3 col-md-6 col-sm-12 justify-content-center">
+                    <div class="card-image" style="background-image: url('IMG/dota2.avif');">
+                        <img src="IMG/dotaLogo.png" alt="Dota 2 Logo" class="card-logo">
+                        <div class="card-overlay-text">WGC League - DOTA 2 History</div>
+                    </div>
+
+                <!-- Text -->   
+                    <div class="card-info-container">
+                        <div class="info-row">
+                            <p class="card-description">6 groups</p>
+                            <p class="card-description">Prize Pool</p>
+                            <p class="card-date">Apr. 10, 2024 13:00 P.M</p>
+                        </div>
+                        <div class="row">
+                            <p class="card-info">30 players &nbsp;&nbsp;&nbsp;&nbsp; 2000$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+
+                <!-- Image -->
+                <div class="grid-card">
+                    <div class="card-image" style="background-image: url('IMG/pubg.jpg');">
+                        <img src="IMG/pubgLogo.png" alt="Pubg Logo" class="card-logo">
+                        <div class="card-overlay-text">Battle Royale League - PUBG Division</div>
+                    </div>
+                    <!-- Text -->
+                    
+                    <div class="card-info-container">
+                        <div class="info-row">
+                            <p class="card-description">2 groups</p>
+                            <p class="card-description">Prize Pool</p>
+                            <p class="card-date">Jul. 29, 2024 17:00P.M</p>
+                        </div>
+                        <div class="row">
+                            <p class="card-info">200 players &nbsp;&nbsp;&nbsp;&nbsp; 4000$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+
+                <!-- Image -->
+                <div class="grid-card">
+                    <div class="card-image" style="background-image: url('IMG/cs2.jpg')">
+                        <img src="IMG/csLogoW.png" alt="Cs 2 logo" class="card-logo">
+                        <div class="card-overlay-text">eSport League - CS 2 Division</div>
+                    </div>
+                    <!-- Text -->
+                    
+                    <div class="card-info-container">
+                        <div class="info-row">
+                            <p class="card-description">8 groups</p>
+                            <p class="card-description">Prize Pool</p>
+                            <p class="card-date">Dec. 15, 2024 21:00P.M</p>
+                        </div>
+                        <div class="row">
+                            <p class="card-info">40 players &nbsp;&nbsp;&nbsp;&nbsp; 9000$</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+
+                <!-- Image -->
+                <div class="grid-card">
+                    <div class="card-image" style="background-image: url('IMG/fortnite.jpg');">
+                        <img src="IMG/fortniteLogo.png" alt="Fortnite Logo" class="card-logo">
+                        <div class="card-overlay-text">Team League -Fortnite Game</div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="card-info-container">
+                        <div class="info-row">
+                            <p class="card-description">4 groups</p>
+                            <p class="card-description">Prize Pool</p>
+                            <p class="card-date">Feb. 10, 2024 10:24 a.m</p>
+                        </div>
+                        <div class="row">
+                            <p class="card-info">400 players &nbsp;&nbsp;&nbsp;&nbsp; 10000$</p>
+                        </div>
+                    </div>
+                </div>
+                    
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!----------------------------------- Latest Matches ----------------------------------->
+
+    <section id="latestMatches">
+
+        <!-- 
+            Container with the latest matches wich will have a col with  4 rows wich will have the teams, text about the date, the event and the social media.
+            It will be: 1 col with 4 rows. Each row will have 3 cols, the first one will have one col with a div with the team logo, under it the team name and under 
+            the team name the score, 'vs' and the other team div. The next col will have the date and  tournament and the last col will have the social media  
+        -->
+
+        <div class="container-fluid">
+            
+            <div class="col-lg-8 col-md-12 col-sm-12" id="divLatestMatches">
+                <h2>Latest Matches</h2>
+
+                <!-- Match 1 -->
+
+                <div class="row" id="matches-row">
+                    <!-- Team vs team  -->
+                    <div class="col-lg-4 col-sm-12 col-md-12 ">
+                        <div class="row">
+                                
+                            <div class="col-4" id="equipo1">
+                                <img src="IMG/nip.png">
+                                <p>NIP</p>
+                                <p id="puntuacion">126</p>
+                            </div>
+                        
+                            <div class="col-4" id="vs">
+                                <p>vs</p>
+                            </div>
+
+                            <div class="col-4" id="equipo2">
+                                <img src="IMG/navi.png">
+                                <p>NAVI</p>
+                                <p id="puntuacion">136</p>
+                            </div>                                      
+                        </div>
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - CS 2 DIVISION</P>
+                            <P id="leagueDate">December 25, 2024 4:00 PM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match 2  -->
+
+                <div class="row" id="matches-row">
+                        <!-- Team vs team  -->
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">
+                                    
+                                <div class="col-4" id="equipo1">
+                                    <img src="IMG/nip.png">
+                                    <p>NIP</p>
+                                    <p id="puntuacion">110</p>
+                                </div>
+                            
+                                <div class="col-4" id="vs">
+                                    <p>vs</p>
+                                </div>
+
+                                <div class="col-4" id="equipo2">
+                                    <img src="IMG/vit.png">
+                                    <p>Vitality</p>
+                                    <p id="puntuacion">150</p>
+                                </div>                                          
+                            </div>
+                        </div>
+
+                        <!-- Information  -->
+
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+
+                            <div class="col-12" id="league">
+                                <P id="leagueMatch">ESPORT LEAGUE - CS 2 DIVISION</P>
+                                <P id="leagueDate">December 25, 2024 4:00 PM</P>
+                            </div>
+                        </div>
+
+                         <!-- Social media  -->
+
+                        <div class="col-sm-12 col-md-12 col-lg-4">
+
+                            <div class="col-12" id="twitch">
+                                <img src="IMG/twitch.png">
+                                Twitch stream
+                            </div>
+                        </div>
+                </div>
+
+                <!-- Match 3  -->
+
+                <div class="row" id="matches-row">
+                    <!-- Team vs team  -->                    
+                    <div class="col-lg-4 col-sm-12 col-md-12 ">
+                        <div class="row">
+                                
+                            <div class="col-4" id="equipo1">
+                                <img src="IMG/spirit.png">
+                                <p>Spirit</p>
+                                <p id="puntuacion">70</p>
+                            </div>
+                        
+                            <div class="col-4" id="vs">
+                                <p>vs</p>
+                            </div>
+
+                            <div class="col-4" id="equipo2">
+                                <img src="IMG/stars5.png">
+                                <p>StarsFive</p>
+                                <p id="puntuacion">100</p>
+                            </div>                                      
+                        </div>
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - Dota 2</P>
+                            <P id="leagueDate">December 25, 2024 4:00 PM</P>
+                        </div>
+
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Match 4  -->
+
+                <div class="row" id="matches-row">
+
+                    <!-- Team vs team  -->
+                    <div class="col-lg-4 col-sm-12 col-md-12 ">
+                        <div class="row">                              
+                            <div class="col-4" id="equipo1">
+                                <img src="IMG/g2.png">
+                                <p>G2</p>
+                                <p id="puntuacion">5</p>
+                            </div>
+                        
+                            <div class="col-4" id="vs">
+                                <p>vs</p>
+                            </div>
+
+                            <div class="col-4" id="equipo2">
+                                <img src="IMG/liquid.png">
+                                <p>Liquid</p>
+                                <p id="puntuacion">3</p>
+                            </div>                                      
+                        </div>
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - RLCS</P>
+                            <P id="leagueDate">December 2, 2024 14:00 P.M</P>
+                        </div>
+                    </div>
+
+                    <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+
+                    </div>
+                </div>
+
+            <p id="loadMore">Load <a href="#">more</a></p>
+            
+
+        </div>
+    </section>
+
+    <!----------------------------------- unicon & game expo ----------------------------------->
+
+    <section id="uniconGame">
+
+        <!-- 1 container with an image wich will be the background by posisioning and atributes on css.  -->
+
+        <div class="container-fluid position-relative" id="capaUnicon">
+            <img src="IMG/uniconIMG.webp" id="imgUnicon" class="w-100">
+        
+            <!-- Text and buttons -->
+            <div class="overlay-text">
+                <h2>UNICON & GAME EXPO</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti id esse, sunt molestiae dicta repellendus? Qui quibusdam recusandae hic iste quae.</p>
+                <button class="btn btn-primary">View schedule</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!----------------------------------- counter ----------------------------------->
+
+    <section id="counter">
+        <div class="container" id="divCounter">
+
+            <!-- 1 container with an img as a logo of a social media and a counter of people that ahs visited the web  -->
+
+            <div class="row" id="counter-row">
+                
+                <!-- Logo 1 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/twitch.png" alt="twitchLogo">
+                    <h2>1300 +</h2>
+                    <p>Twitch Streams</p>
+                </div>
+                <!-- Logo 2 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/youtube.png" alt="youtubeLogo">
+                    <h2>1100 +</h2>
+                    <p>YouTube Streams</p>
+                </div>
+                <!-- Logo 3 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/mando.png" >
+                    <h2>900 +</h2>
+                    <p>Past Games</p>
+                </div>
+                <!-- Logo 4 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/team.png" alt="twitchLogo">
+                    <h2>256 +</h2>
+                    <p>Pro Teams</p>
+                </div>
+            </div>
+
+        </div>
+      
+
+    </section>
+
+    <!----------------------------------- share ----------------------------------->
+
+    <section id="share">
+
+        <!-- 1 container with text and a row, wich contains columns with photos. It will be responsive, 6 col on small devices
+             3 on medium devices and 1 on large devices  -->
+
+        <div class="container-fluid" id="divShare">
+
+            <div class="" id="share">
+                <h2>Share whith <span id="plaxerAzul">#PLAXER</span></h2> <br/>
+            </div>
+
+            <div class="" id="follow">
+                <p>Follow me <span id="plaxerGris">#plaxer</span></p>
+            </div>
+
+            <!-- Images -->
+
+            <div class="row" id="fotos">
+                 <!-- Image 1 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/cs2.jpg" class="img-fluid">
+                </div>
+                <!-- Image 2 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/dota2.avif" class="img-fluid">
+                </div>
+                <!-- Image 3 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/fortnite.jpg" class="img-fluid">
+                </div>
+                <!-- Image 4 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/uniconIMG.webp" class="img-fluid">
+                </div>
+                <!-- Image 5 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img1.webp" class="img-fluid">
+                </div>
+                <!-- Image 6 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img2.webp" class="img-fluid">
+                </div>
+                <!-- Image 7 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img3.webp" class="img-fluid">
+                </div>
+                <!-- Image 8 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/pubg.jpg" class="img-fluid">
+                </div>
+                <!-- Image 9 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/clashRo.webp" class="img-fluid">
+                </div>
+                <!-- Image 10 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/rl.jpg" class="img-fluid">
+                </div>
+                <!-- Image 11 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/bf1.jpeg" class="img-fluid">
+                </div>
+                <!-- Image 12 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/pokemon.png" class="img-fluid">
+                </div>
+            </div>
+
+    </section>
+
+    <!----------------------------------- Footer ----------------------------------->
+
+
+    <footer id="footer">
+
+        <!-- 1 container with a row, wich contains columns with each seaction of the footer. Each column will be responsive, 12 col on small devices
+             6 on medium devices and 3 on large devices  -->
+
+        <div class="container-fluid" id="bordeFooter">
+            <div class="row" id="textoFooter">
+
+                <!------------ Plaxer------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="IMG/logo-light.png"> <br/>
+                    <input type="text" name="gmail" placeholder="enter you email" id="email" pattern=".+@example\.com">
+                    <p id="subscribe"><a href="#subscribe"> <img src="IMG/flecha.png" alt="">Servicios</a></p>
+                    <p>The world without photography will be meaningless to us.</p>
+                </div>
+
+                <!------------ Address ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Addres</p>
+                    <p>Baker Street 223b London, CA 70413 <br/> Open: 9:30 A.M - 5:30 P.M</p>
+                    <p>Phone: +1(800)456 37 11</p>
+                    <p>Email: support@promo-theme.com</p>
+                    <p id="socialMedia">
+                        <a href=""><img src="IMG/twitch.png" alt=""></a>
+                        <a href=""><img src="IMG/twitter.png" alt=""></a>
+                        <a href=""><img src="IMG/facebook.png" alt=""></a>
+                    </p>
+                </div>
+
+                <!------------ Recent Posts ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Posts</p>
+                    <p>Kills You Slowly <br/> November 8,2024</p>
+                    <p>Clout <br/> April 22, 2024</p>
+                    <p>Jerome <br/> April 22, 2024</p>
+                    <p><a href="">Linkedin</a></p>
+                </div>
+
+                 <!------------ Recent Comments ------------>
+                 <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Comments</p>
+                    <p>Elena Cobsky - Diving Engagement Online</p>
+                    <p>John Michel - Desinging for the Web in 2019</p>
+                    <p>Anton Stockman - Streamlining the path to Conversion</p>
+                </div>
+            </div>
+
+            <p id="copyright"><img src="IMG/cpr.png" alt="">2024 GameFusion StudiosTeam | Privacy Policy | Sitemap</p>
+
+    </footer>
+    
+</body>
+</html>

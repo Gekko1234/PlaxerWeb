@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!----------------------------------- FavIcon ----------------------------------->
+    <link rel="icon" href="IMG/favicon.png">
+    <!----------------------------------- Link del css ----------------------------------->
+    <link rel="stylesheet" href="CSS/estiloSobreNosotros.css">
+    <!----------------------------------- Link de Boostrap5 ----------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Button at the bottom-right part -->
+    <button id="botonFijo">
+        <a href="#Home"><img src="IMG/flecha.jpg" alt=""></a>
+    </button>
+
+    <header id="Home">
+        <!-- Nav start -->
+       <nav class="navbar navbar-expand-lg fixed-top" id="nav">  <!-- Positioned at the top, no background -->
+           <div class="container-fluid" id="capaNav">
+
+               <div class="row col-lg-6 col-sm-1">
+                   <p class="col-2"></p>
+                   <a id="titulo" class="col-4"><img src="IMG/logo-light.png"></a>
+               </div>
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+
+               <div class="collapse navbar-collapse" id="menu">
+                   <ul class="navbar-nav ms-auto justify-content-end"> <!-- Aligns items to the right -->
+                       
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="galeria.html">Gallery</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="sobreNosotros.html">About Us</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="contactos.html">Contacts</a>
+                       </li>
+               
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+                       </li>
+                       
+                   </ul>
+               </div>
+
+       </nav>
+       <!-- Nav end -->
+
+        <!-- Blog text -->
+       <div id="tituloPagina" class="container-fluid">
+        <div class="row justify-content-start">
+            <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-column">
+                <h1>About Us</h1>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Header end-->
+
+    <section id="acordeon">
+
+
+        <!-- I will be using javascript for the acordeon style, with buttons and adding or removing properties like display none  or display block-->
+
+        <div class="container">
+            <div class="col">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12" id="imagen">
+                        <img src="IMG/simple.webp">
+                    </div>
+    
+    
+                    <div class="col-lg-6 col-md-12 col-sm-12" id="texto">
+
+                        <!-- Buttons -->
+    
+                       <div class="row">
+
+                            <div class="col-4">
+                                <button id="botonAbout">ABOUT</button>
+                            </div>
+
+                            <div class="col-4">
+                                <button id="botonSchedule">SCHEDULE</button>
+                            </div>
+
+                            <div class="col-4">
+                                <button id="botonLocation">LOCATION</button>
+                            </div>
+
+
+                       </div>
+
+                       <!-- Texts, only showing the first one and when u click the button it dissapears and appears the one joined to the button-->
+
+                       <div class="row" id="aboutRow">
+                            <h3 style="margin-top: 20px;"> 
+                                Just design & compose, 
+                                cooperating with clients who want the best for their business.
+                            </h3>
+
+                            <p style="margin-top: 20px;">
+                                We transform your ideas into creative and effective solutions, 
+                                working closely with you to elevate your business to the next level. 
+                                Our focus is on understanding your needs and goals so we can design visual and c
+                                ommunication strategies that truly reflect your brand’s essence. We believe in the 
+                                power of genuine collaboration, where each project is an opportunity to innovate and exceed expectations. 
+                                You bring the vision; we bring the design and strategy to make it a reality.
+                            </p>
+                       </div>
+
+
+                       <div class="row" id="aboutSchedule" style="display: none;">
+                        <h3 style="margin-top: 20px;"> 
+                            Stay Organized with Seamless Scheduling
+                        </h3>
+
+                        <p style="margin-top: 20px;">
+                            Effortlessly manage your time and keep projects on track with our intuitive scheduling system. 
+                        Designed to adapt to your workflow, our scheduling tools help you stay organized, meet deadlines, 
+                        and make the most of every meeting or milestone. Let us handle the logistics so you can focus on what truly 
+                        matters—delivering outstanding results for your clients.
+                        </p>
+                   </div>
+
+
+                   <div class="row" id="aboutLocation" style="display: none;">
+                    <h3 style="margin-top: 20px;"> 
+                        Find Us Here
+                    </h3>
+
+                    <p style="margin-top: 20px;">
+                        Visit us at our conveniently located office, where creativity and collaboration come to life. 
+                        Our workspace is designed to inspire and accommodate productive meetings, brainstorming sessions, 
+                        and project planning. Can’t make it in person?We’re always just a message or call away to connect 
+                        with you from wherever you are. Let's make great things happen together—no matter the distance!
+                    </p>
+               </div>
+
+               <p id="loadMore">Load <a href="#">more</a></p>
+
+
+                
+                    </div>
+
+                </div>  
+            </div>
+        </div>
+        
+
+    </section>
+
+       <!----------------------------------- counter ----------------------------------->
+
+       <section id="counter">
+        <div class="container" id="divCounter">
+
+            <!-- 1 container with an img as a logo of a social media and a counter of people that ahs visited the web  -->
+
+            <div class="row" id="counter-row">
+                
+                <!-- Logo 1 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/twitch.png" alt="twitchLogo">
+                    <h2>1300 +</h2>
+                    <p>Twitch Streams</p>
+                </div>
+                <!-- Logo 2 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/youtube.png" alt="youtubeLogo">
+                    <h2>1100 +</h2>
+                    <p>YouTube Streams</p>
+                </div>
+                <!-- Logo 3 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/mando.png" >
+                    <h2>900 +</h2>
+                    <p>Past Games</p>
+                </div>
+                <!-- Logo 4 -->
+                <div class="col-lg-3 col-sm-6 col-md-6" id="counter">
+                    <img src="IMG/team.png" alt="twitchLogo">
+                    <h2>256 +</h2>
+                    <p>Pro Teams</p>
+                </div>
+            </div>
+
+        </div>
+      
+
+    </section>
+
+    <!------------ Our Team------------>
+
+    <section id="otSection">
+        <div class="container-fluid">
+            <div class="col-12">
+
+                <div class="row" id="equipos">
+                
+                            <h2 style="margin-bottom: 20px;">OUR TEAM</h2>
+                            <div class="col-lg-2 col-md-6 col-sm-12" id="equipo">
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam1.jpg">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>John Stutletmon<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 col-sm-12" >
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam2.webp">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>Charlotte Mignesn<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 col-sm-12" >
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam3.jpg">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>Maria Munchinks<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 col-sm-12" >
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam4.avif">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>Alexandre Ronaldo<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 col-sm-12" >
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam5.jpg">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>Rihanna Novami<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 col-sm-12" >
+                                <div class="row" id="equipo">
+                                    <img src="IMG/ourTeam6.jpg">
+                                    <div id="textoEquipo">
+                                        <p>
+                                            <br/>Miguel Rios<br/>  
+                                            <a href=""><img src="IMG/twitch.png" alt=""></a>
+                                            <a href=""><img src="IMG/twitter.png" alt=""></a>
+                                            <a href=""><img src="IMG/facebook.png" alt=""></a>
+                                        </p>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+    </section>
+
+    <!----------------------------------- Best Moments ----------------------------------->
+
+
+
+    <section id="bestMoments">
+
+        <div class="container-fluid">
+            
+            <div class="col-lg-8 col-md-12 col-sm-12" id="divBestMoments">
+                <h2 style="margin-bottom: 20px;">Best Moments</h2>
+
+                <!-- Moment 1 -->
+
+                <div class="row" id="matches-row">
+                    <!-- T -->
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">    
+                                
+                            <div class="col-12" id="momentImg">
+                                <img src="IMG/csMoment1.jpg">
+                            </div> 
+                        </div>
+                    </div>
+                        
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - CS 2 DIVISION</P>
+                            <P id="leagueDate">December 5, 2024 22:00 PM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moment 2  -->
+
+                <div class="row" id="matches-row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">    
+                                
+                            <div class="col-12" id="momentImg">
+                                <img src="IMG/csgoMomento.jpg">
+                            </div> 
+                        </div>
+                    </div>
+                        
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - CS 2 DIVISION</P>
+                            <P id="leagueDate">April 15, 2024 13:00 PM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moment 3  -->
+
+                <div class="row" id="matches-row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">    
+                                
+                            <div class="col-12" id="momentImg">
+                                <img src="IMG/fortniteMomento.webp">
+                            </div> 
+                        </div>
+                    </div>
+                        
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - Fortnite</P>
+                            <P id="leagueDate">May 12, 2024 9:00 AM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moment 4  -->
+
+                <div class="row" id="matches-row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">    
+                                
+                            <div class="col-12" id="momentImg">
+                                <img src="IMG/rl.jpg">
+                            </div> 
+                        </div>
+                    </div>
+                        
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - Rocket League</P>
+                            <P id="leagueDate">December 14, 2024 18:00 PM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moment 4  -->
+
+                <div class="row" id="matches-row">
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-lg-4 col-sm-12 col-md-12 ">
+                            <div class="row">    
+                                
+                            <div class="col-12" id="momentImg">
+                                <img src="IMG/pubgMomento.webp">
+                            </div> 
+                        </div>
+                    </div>
+                        
+                    </div>
+
+                    <!-- Information  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="league">
+                            <P id="leagueMatch">ESPORT LEAGUE - PUBG</P>
+                            <P id="leagueDate">August 3, 2024 4:00 PM</P>
+                        </div>
+                    </div>
+
+                     <!-- Social media  -->
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div class="col-12" id="twitch">
+                            <img src="IMG/twitch.png">
+                            Twitch stream
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            <p id="loadMore">Load <a href="#">more</a></p>
+            
+
+        </div>
+    </section>
+
+
+    <!----------------------------------- share ----------------------------------->
+
+    <section id="share">
+
+        <!-- 1 container with text and a row, wich contains columns with photos. It will be responsive, 6 col on small devices
+             3 on medium devices and 1 on large devices  -->
+
+        <div class="container-fluid" id="divShare">
+
+            <div class="" id="share">
+                <h2>Share whith <span id="plaxerAzul">#PLAXER</span></h2> <br/>
+            </div>
+
+            <div class="" id="follow">
+                <p>Follow me <span id="plaxerGris">#plaxer</span></p>
+            </div>
+
+            <!-- Images -->
+
+            <div class="row" id="fotos">
+                 <!-- Image 1 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/cs2.jpg" class="img-fluid">
+                </div>
+                <!-- Image 2 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/dota2.avif" class="img-fluid">
+                </div>
+                <!-- Image 3 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/fortnite.jpg" class="img-fluid">
+                </div>
+                <!-- Image 4 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/uniconIMG.webp" class="img-fluid">
+                </div>
+                <!-- Image 5 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img1.webp" class="img-fluid">
+                </div>
+                <!-- Image 6 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img2.webp" class="img-fluid">
+                </div>
+                <!-- Image 7 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/img3.webp" class="img-fluid">
+                </div>
+                <!-- Image 8 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/pubg.jpg" class="img-fluid">
+                </div>
+                <!-- Image 9 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/clashRo.webp" class="img-fluid">
+                </div>
+                <!-- Image 10 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/rl.jpg" class="img-fluid">
+                </div>
+                <!-- Image 11 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/bf1.jpeg" class="img-fluid">
+                </div>
+                <!-- Image 12 -->
+                <div class="col-lg-1 col-md-3 col-sm-6 p-0">
+                    <img src="IMG/pokemon.png" class="img-fluid">
+                </div>
+            </div>
+
+    </section>
+
+
+
+        <!----------------------------------- FOOTER----------------------------------->
+
+
+
+
+    <footer id="footer">
+        <div class="container-fluid" id="bordeFooter">
+            <div class="row" id="textoFooter">
+    
+                <!------------ Plaxer------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="IMG/logo-light.png"> <br/>
+                    <input type="text" name="gmail" placeholder="enter you email" id="email" pattern=".+@example\.com">
+                    <p id="subscribe"><a href="#subscribe"> <img src="IMG/flecha.png" alt="">Servicios</a></p>
+                    <p>The world without photography will be meaningless to us.</p>
+                </div>
+    
+                <!------------ Address ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Addres</p>
+                    <p>Baker Street 223b London, CA 70413 <br/> Open: 9:30 A.M - 5:30 P.M</p>
+                    <p>Phone: +1(800)456 37 11</p>
+                    <p>Email: support@promo-theme.com</p>
+                    <p id="socialMedia">
+                        <a href=""><img src="IMG/twitch.png" alt=""></a>
+                        <a href=""><img src="IMG/twitter.png" alt=""></a>
+                        <a href=""><img src="IMG/facebook.png" alt=""></a>
+                    </p>
+                </div>
+    
+                <!------------ Recent Posts ------------>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Posts</p>
+                    <p>Kills You Slowly <br/> November 8,2024</p>
+                    <p>Clout <br/> April 22, 2024</p>
+                    <p>Jerome <br/> April 22, 2024</p>
+                    <p><a href="">Linkedin</a></p>
+                </div>
+    
+                    <!------------ Recent Comments ------------>
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                    <p id="tituloFooter">Recent Comments</p>
+                    <p>Elena Cobsky - Diving Engagement Online</p>
+                    <p>John Michel - Desinging for the Web in 2019</p>
+                    <p>Anton Stockman - Streamlining the path to Conversion</p>
+                </div>
+            </div>
+    
+            <p id="copyright"><img src="IMG/cpr.png" alt="">2024 GameFusion StudiosTeam | Privacy Policy | Sitemap</p>
+    
+    </footer>
+
+    <script src="JS/aboutUs.js"></script>
+    
+</body>
+</html>
